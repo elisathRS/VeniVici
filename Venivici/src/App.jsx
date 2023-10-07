@@ -96,7 +96,7 @@ function App() {
       <div className="main-container">
         <div className="prev-item">
           <div>
-            <h2>Previously Seen Items</h2>
+            <h2>Who have we seen so far?</h2>
             {prevItems.map((item, index) => (
               <ul key={index}>
                 {item }
