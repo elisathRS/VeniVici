@@ -1,0 +1,120 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+ 
+
+
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button{
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 0px 10px; /* Relleno interior */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  margin-left: 5px;
+}
+
+.dog-img {
+  width: 300px; /* Set the width to your desired size */
+  height: 300px; /* Set the height to your desired size */
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+  border: 5px solid white; /* Add a border if desired */
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Columnas para prev-items, container-center y banned-items */
+  gap: 10px; /* Espacio entre las columnas */
+}
+
+.header-container{
+  grid-column: 1 / span 3; /* Ocupa todas las tres columnas */
+  grid-row: 1; /* Está en la primera fila */
+  justify-self: center; /* Centrar horizontalmente dentro de su espacio */
+  align-self: start; /* Alinea en la parte superior verticalmente */
+ 
+}
+
+.prev-item {
+  grid-column: 1; /* Alinear prev-items a la izquierda */
+  background-color: #D4F4EC;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.container-center {
+  grid-column: 2; /* Alinear container-center en el centro */
+  background-color: #FFD8C5;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.banned-item {
+  grid-column: 3; /* Alinear banned-items a la derecha */
+  background-color: rgba(240, 240, 240, 0.5); 
+  padding: 20px;    
+  
+}
+
+.itemBan{
+  background-color: #ff003c; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Relleno interior */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+.discover-button{
+  background-color: #fea889; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 30px; /* Relleno interior */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+  font-weight: bold;
+}
